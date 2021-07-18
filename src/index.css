@@ -1,13 +1,65 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: 'Rubik', 'sans-serif';
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
 }
+
+.container {
+  background-image: none;
+  position: relative;
+  width: 400px;
+  height: 500px;
+  overflow: hidden;
+}
+
+.cold {
+  background-image: linear-gradient(180deg, #52307c,#bca0dc);
+}
+
+.fair {
+  background-image: linear-gradient(180deg, #094c72,#bcd9ea);
+}
+
+.warm {
+  background-image: linear-gradient(180deg, #ff6600,#ffaf7a);
+}
+
+.info {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  left: 100px;
+  top: 125px;
+}
+
+.temp{
+  font-size: 30px;
+  margin-top: 35px;
+}
+
+.stat{
+  font-size: 20px;
+}
+
+.time {
+  font-size: 18px;
+  margin-top: 2px;
+}
+
+.loc{
+  font-size: 18px;
+}
+
+
