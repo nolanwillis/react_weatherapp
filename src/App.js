@@ -5,7 +5,7 @@ import Location from './components/Location'
 import {useState, useEffect} from 'react'
 /* Gets data through api given a specified latitude, longitude, and api key. See
 openweathermap.org/api for more info*/ 
-const request=`https://api.openweathermap.org/data/2.5/weather?lat=43.04812&lon=-76.14742&appid=d15a04120f6a7173d3a067601d87fead&units=imperial`
+const request="api key"
 
 function App() {
   const [userData, setUserData] = useState([]);
